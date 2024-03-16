@@ -1,7 +1,7 @@
 ## Install the refquirements:
 
-    ### pip install -r requirements.txt
+    pip install -r requirements.txt
 
 ## Start the app:
 
-    ### streamlit run app.py
+    streamlit run app.py
