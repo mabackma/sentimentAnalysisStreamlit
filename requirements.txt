@@ -1,0 +1,4 @@
+typing
+streamlit
+pandas
+scikit-learn
