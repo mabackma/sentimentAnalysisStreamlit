@@ -66,6 +66,9 @@ def predict_sentiment(model, review):
 # Train the sentiment model with restaurant reviews
 pipeline = cast(Pipeline, train_model('Restaurant_reviews.csv'))
 
+# Title
+st.write("Restraurant review prediction")
+
 # Text input for review
 review_input = st.text_input("Enter your review:", "")
 
