@@ -67,6 +67,14 @@ def predict_sentiment(model, review):
 pipeline = cast(Pipeline, train_model('Restaurant_reviews.csv'))
 
 # Title
+st.write("Restaurant reviews")
+
+# Plot a bar chart for the counts of different ratings
+df_restaurant_reviews = pd.read_csv('Restaurant_reviews')
+rating_counts = df_restaurant_reviews['Rating'].value_counts()
+st.bar_chart(rating_counts)
+
+# Title
 st.write("Restaurant review prediction")
 
 # Text input for review
