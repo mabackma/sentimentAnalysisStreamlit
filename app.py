@@ -71,6 +71,7 @@ st.write("Past restaurant ratings")
 
 # Plot a bar chart for the counts of different ratings
 df_restaurant_reviews = pd.read_csv('Restaurant_reviews.csv')
+df_restaurant_reviews['Rating'] = df_restaurant_reviews['Rating'].apply(change_to_numeric)
 rating_counts = df_restaurant_reviews['Rating'].value_counts()
 st.bar_chart(rating_counts)
 
